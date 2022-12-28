@@ -1,6 +1,6 @@
 {
   "name": "swyft-functions",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -11,5 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SwyftPain",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sp-easyembed": "^1.1.1"
+  }
 }
