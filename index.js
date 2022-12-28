@@ -195,15 +195,15 @@ const percentage = (partialValue, totalValue) =>
  * @return {Intl.NumberFormat} The formatted number.
  *
  * @example
- * const formatter = formatter('en-US', 'currency', 'USD', 'items.coins');
+ * const formatter = formatter('en-US', 'currency', 'USD', items.coins);
  * formatter.format(12345.67); // => '$12,345.67'
  *
  * @example
- * const formatter = formatter('de-DE', 'decimal', 'EUR', 'items.coins');
+ * const formatter = formatter('de-DE', 'decimal', 'EUR', items.coins);
  * formatter.format(12345.67); // => '12.345,67'
  *
  * @example
- * const formatter = formatter('ja-JP', 'percent', 'JPY', 'items.coins');
+ * const formatter = formatter('ja-JP', 'percent', 'JPY', items.coins);
  * formatter.format(0.5); // => '50%'
  */
 const formatter = function (countryCode, style, currency = null, variable) {
