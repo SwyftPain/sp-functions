@@ -188,20 +188,20 @@ const percentage = (partialValue, totalValue) =>
 
 /**
  * Formats a number according to the specified country code, style, and currency.
- * 
+ *
  * @param {string} countryCode - The country code to use for formatting.
  * @param {string} style - The style to use for formatting. Valid values are 'decimal', 'currency', or 'percent'.
  * @param {string} currency - The currency to use for formatting.
  * @return {Intl.NumberFormat} The formatted number.
- * 
+ *
  * @example
  * const formatter = formatter('en-US', 'currency', 'USD');
  * formatter.format(12345.67); // => '$12,345.67'
- * 
+ *
  * @example
  * const formatter = formatter('de-DE', 'decimal', 'EUR');
  * formatter.format(12345.67); // => '12.345,67'
- * 
+ *
  * @example
  * const formatter = formatter('ja-JP', 'percent', 'JPY');
  * formatter.format(0.5); // => '50%'
@@ -209,17 +209,19 @@ const percentage = (partialValue, totalValue) =>
 const formatter = function (countryCode, style, currency = null) {
   let formatStyle;
   switch (style) {
-    case 'decimal':
-      formatStyle = { style: 'decimal' };
+    case "decimal":
+      formatStyle = { style: "decimal" };
       break;
-    case 'currency':
-      formatStyle = { style: 'currency', currency: currency };
+    case "currency":
+      formatStyle = { style: "currency", currency: currency };
       break;
-    case 'percent':
-      formatStyle = { style: 'percent' };
+    case "percent":
+      formatStyle = { style: "percent" };
       break;
     default:
-      throw new Error('Invalid style specified. Valid styles are "decimal", "currency", or "percent".');
+      throw new Error(
+        'Invalid style specified. Valid styles are "decimal", "currency", or "percent".'
+      );
   }
   const format = new Intl.NumberFormat(countryCode, formatStyle);
   return format;
