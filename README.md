@@ -5,7 +5,7 @@ Install like:
 
 Define in your project any of the functions in the following way:
 ```js
-const { onlyLetters, time, capitalizeFirst, onlyNumbers, timeformat } = require('swyft-functions');
+const { onlyLetters, time, capitalizeFirst, onlyNumbers, timeformat, random, formatter, percentage, anyMentions, theuser, ifempty, embedError, embedSuccess, embedInfo, embedWarn } = require('swyft-functions');
 ```
 
 There is JS-DOC for each function explaining what they are doing.
