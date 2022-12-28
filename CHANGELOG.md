@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Nothing yet
 
-## [1.1.0] - 2020-06-01
+## [1.1.3] - 2022-12-28
 
 ### Added
 
@@ -22,8 +22,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
-- Nothing yet
+- The dates in changelog
+- Version in package.js
 
-## [0.0.1] - 2020-01-01
+## [0.0.1] - 2022-12-26
 
 - Initial release
