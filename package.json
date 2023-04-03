@@ -13,7 +13,7 @@
   "author": "SwyftPain",
   "license": "ISC",
   "dependencies": {
-    "sp-easyembed": "^1.1.1"
+    "sp-easyembed": "^1.2.6"
   },
   "devDependencies": {
     "sp-easy-embed": "^1.1.1"
